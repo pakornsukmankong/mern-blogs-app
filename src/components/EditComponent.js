@@ -70,9 +70,6 @@ const EditComponent = (props) => {
           <a href="/" className="btn btn-warning ms-2" >กลับหน้าแรก</a>
         </form>
       </div>
-      <div className="position-absolute bottom-0 w-100">
-      <FooterComponent/>
-      </div>
       </>
     )
   }
@@ -100,6 +97,7 @@ const EditComponent = (props) => {
   }
 
   return (
+    <>
     <div className="container p-5" >
       <NavbarComponent/>
       <h1 className="text-center mt-2">แก้ไขบทความ</h1>
@@ -107,6 +105,10 @@ const EditComponent = (props) => {
       {showUpdateForm()}
       </div>
     </div>
+    <div className="position-absolute bottom-0 w-100">
+    <FooterComponent/>
+    </div>
+    </>
   )
 }
 
