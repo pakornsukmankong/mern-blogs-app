@@ -93,8 +93,8 @@ function App() {
             })
           : 
             <div className="mt-5 d-flex align-items-center justify-content-center">
-              <div class="spinner-border me-2" role="status"></div>
-              <span>Loading....</span>
+              <div className="spinner-border me-2 text-primary" role="status"></div>
+              <span className="text-dark">Loading....</span>
             </div>
         }
       </div>
