@@ -32,7 +32,10 @@ const SingleComponent = (props) => {
           <p className="text-muted">ผู้เขียน: {blog.author} เผยแพร่: {new Date(blog.createdAt).toLocaleString()}</p>
         </div>
       :
-        <div>Opps!! Something Wrong</div>
+      <div className="mt-5 d-flex align-items-center justify-content-center">
+        <div class="spinner-border me-2" role="status"></div>
+        <span>Loading....</span>
+      </div>
       }
     </div>
     <div className="position-absolute bottom-0 w-100">
