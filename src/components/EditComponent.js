@@ -105,7 +105,7 @@ const EditComponent = (props) => {
       {showUpdateForm()}
       </div>
     </div>
-    <div className="position-absolute bottom-0 w-100">
+    <div className="position-fixed bottom-0 w-100">
     <FooterComponent/>
     </div>
     </>

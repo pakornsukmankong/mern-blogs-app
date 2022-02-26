@@ -2,7 +2,7 @@ import axios from "axios"
 import {useState,useEffect} from 'react'
 import NavbarComponent from "./NavbarComponent"
 import FooterComponent from './FooterComponent'
-import parse from 'html-react-parser';
+import parse from 'html-react-parser'
 
 const SingleComponent = (props) => {
   const [blog,setBlog] = useState('')
@@ -38,9 +38,9 @@ const SingleComponent = (props) => {
       </div>
       }
     </div>
-    <div className="position-absolute bottom-0 w-100">
-    <FooterComponent/>
-    </div>
+      <div className="position-fixed bottom-0 w-100">
+      <FooterComponent/>
+      </div>
     </>
   )
 }
